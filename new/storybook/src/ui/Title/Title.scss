@@ -1,0 +1,17 @@
+.title-wrapper {
+  margin: 35px 0 15px;
+  border-bottom: 1px solid $border;
+  width: 100%;
+  display: flex;
+  
+  h2 {
+    color: $text-title;
+    margin-bottom: 5px;
+  }
+ 
+  h3 {
+    color: $text-subtitle;
+    margin-top: 8px;
+    font-size: 14px;
+  }
+}

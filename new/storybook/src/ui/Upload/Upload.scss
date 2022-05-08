@@ -1,0 +1,16 @@
+.upload-wrapper {
+  .ant-upload {
+    &:not(.ant-upload-disabled):hover {
+      border-color: $primary !important;
+    }
+  
+    .ant-upload-drag-icon {
+      span {
+        svg {
+          color: $text;
+        }
+      }
+    }
+  }
+  
+}

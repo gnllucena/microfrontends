@@ -1,0 +1,94 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  width: 100%;
+  font-weight: 600 !important;
+
+  &.btn-small {
+    height: 38px;
+    font-size: 15px !important;
+  }
+
+  &.btn-big {
+    height: 57px;
+    font-size: 17px !important;
+  }
+
+  &.ant-btn-dangerous {
+    color: $button-text-default !important;
+    background: #800f19 !important;
+    border-color: #800f19 !important;
+
+    &:hover {
+      color: $button-text-default-hover !important;
+      background: #a61d24 !important;
+      border-color: #a61d24 !important;
+    }
+  }
+
+  &:not(.ant-btn-dangerous) {
+    &.btn-primary {
+      color: $button-text-primary !important;
+      border-color: $primary !important;
+      background-color: $primary !important;
+    
+      &:hover {
+        color: $button-text-primary-hover !important;
+        border-color: $primary-hover !important;
+        background-color: $primary-hover !important;
+      }
+    }
+
+    &.btn-text {
+      color: $button-text-default !important;
+      
+      &:hover {
+        color: $button-text-default-hover !important;
+      }
+    }
+
+    &.btn-default, .ant-btn-default:active {
+      color: $button-text-default !important;
+      background-color: $button-background !important;
+      border: 1px solid $button-background !important;
+      font-weight: 500 !important;
+      
+      &:hover {
+        color: $button-text-default-hover !important;
+        background-color: transparent !important;
+        border: 1px solid $button-background !important;
+      }
+    }
+    
+    &.btn-link {
+      color: $primary !important;
+  
+      &:hover {
+        color: $primary-hover !important;
+        border: none;
+      }
+    }
+
+    .ant-btn-primary:focus, 
+    .ant-btn-primary:hover, 
+    .ant-btn:focus, 
+    .ant-btn:hover {
+      color: unset !important;
+      background-image: unset !important;
+      background-color: unset !important;
+      border-color: unset !important;
+    }
+  }
+  
+  svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 2px;
+  }
+
+  &::after {
+    content: none;
+  }
+}

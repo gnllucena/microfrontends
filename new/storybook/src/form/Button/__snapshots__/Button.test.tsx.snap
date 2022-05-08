@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Rendering 1`] = `
+<button
+  className="ant-btn ant-btn-primary btn btn-small btn-primary"
+  onClick={[Function]}
+  type="submit"
+>
+  <span>
+    button
+  </span>
+</button>
+`;

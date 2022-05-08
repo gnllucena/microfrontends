@@ -1,0 +1,41 @@
+.content {
+  .ant-pagination {
+    margin: 12px 0 24px;
+    float: right;
+  
+    .ant-pagination-item-link-icon {
+      color: $primary;
+    }
+  
+    .ant-pagination-item {
+      border-color: $border;
+    }
+  
+    .ant-pagination-item-active, 
+    .ant-pagination-item:focus, 
+    .ant-pagination-item:hover {
+      border-color: $primary;
+  
+      a {
+        color: $primary;
+      }
+    }
+  
+    .ant-pagination-next:hover, 
+    .ant-pagination-next:focus, 
+    .ant-pagination-prev:hover, 
+    .ant-pagination-prev:focus {
+      button {
+        border-color: $primary;
+        color: $primary;
+      }
+    }
+  
+    .ant-pagination-disabled {
+      button {
+        border-color: $border !important;
+        color: $text !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.switch-wrapper {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+
+  > a {
+    color: $primary;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      color: $primary;
+      text-decoration: none;
+    }
+  }
+
+  .switch-input-wrapper {
+    display: flex;
+    align-items: center;
+
+    .field-container {
+      .ant-form-item {
+        margin-bottom: 0;
+        margin-right: 10px;
+      }
+    }
+
+    .ant-switch {
+      min-width: 36px;
+      height: 24px;
+      border: 1px solid $border;
+      background-color: $input-background;
+
+      .ant-switch-handle {
+        top: 2px !important;
+      }
+
+      &.ant-switch-checked {
+        background-color: $primary;
+      }
+
+      &::after {
+        width: 17px;
+        height: 17px;
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      .ant-click-animating-node {
+        display: none;
+      }
+    }
+
+    .label-wrapper {
+      color: $text;
+      font-size: 15px;
+      line-height: 18px;
+      font-weight: 600;
+      margin-left: 5px;
+    }
+  }
+
+  .input-error-wrapper {
+    color: $danger;
+    margin-top: 2px;
+  }
+
+  .switch-input-wrapper.has-error {
+    .ant-switch {
+      background-color: $danger;
+    }
+  }
+}

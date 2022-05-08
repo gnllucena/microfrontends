@@ -1,0 +1,21 @@
+.actions-wrapper {
+  margin-top: 35px;
+  width: 100%;
+  height: 38px;
+
+  .actions-button-wrapper-left {
+    float: left;
+    
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  .actions-button-wrapper-right {
+    float: right;
+
+    &:not(:last-child) {
+      margin-left: 10px;
+    }
+  }
+}

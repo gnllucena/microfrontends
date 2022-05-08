@@ -1,0 +1,142 @@
+@import '~antd/dist/antd.dark.min.css';
+@import '~react-quill/dist/quill.snow.css';
+@import "~react-responsive-carousel/lib/styles/carousel.min.css";
+
+@import './Card.scss';
+@import './Form.scss';
+@import './Pagination.scss';
+
+* {
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+.ant-message {
+  z-index: 99999;
+}
+
+.ant-layout {
+  background: $background;
+}
+
+::selection {
+  background: $primary;
+  color: $text;
+}
+
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+body::-webkit-scrollbar-track, body *::-webkit-scrollbar-track {
+  background-color: $scroll-bar;
+}
+
+body::-webkit-scrollbar, body *::-webkit-scrollbar {
+  width: 8px;
+  background-color: $scroll-bar;
+}
+
+body::-webkit-scrollbar-thumb, body *::-webkit-scrollbar-thumb {
+  background-color: $scroll-thumb;
+}
+
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
+  font-display: swap;
+}
+
+html,
+html a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+li,
+dl,
+th,
+dt,
+input,
+textarea,
+span,
+div {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  background-color: $background;
+  color: $text;
+}
+
+button {
+  -o-transition-property: none !important;
+  -moz-transition-property: none !important;
+  -ms-transition-property: none !important;
+  -webkit-transition-property: none !important;
+  transition-property: none !important;
+  -o-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+
+a {
+  color: $text-anchor;
+
+  &:hover {
+    color: $text-anchor-hover;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style-type: none;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.content {
+  padding: 12px 30px;
+}

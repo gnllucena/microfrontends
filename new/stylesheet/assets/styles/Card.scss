@@ -1,0 +1,29 @@
+.content {
+  .ant-card {
+    color: $text;
+    border-color: $border;
+    width: 100%;
+    
+    .ant-row {
+      width: 100%
+    }
+
+    .ant-card-body {
+      background-color: $card;
+
+      .ant-card-meta-title, .ant-statistic-title {
+        color: $text-title;
+      }
+
+      .ant-card-meta-description {
+        color: $text-subtitle;
+      }
+
+      .ant-card-meta-avatar {
+        .ant-skeleton-image {
+          background-color: $avatar !important;
+        }
+      }
+    }
+  }
+}
