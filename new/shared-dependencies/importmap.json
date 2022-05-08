@@ -1,7 +1,7 @@
 {
   "imports": {
-    "single-spa": "http://localhost:9096/single-spa.min.js",
-    "react": "http://localhost:9096/react.production.min.js",
-    "react-dom": "http://localhost:9096/react-dom.production.min.js"
+    "single-spa": "http://localhost:9096/libraries/single-spa.min.js",
+    "react": "http://localhost:9096/libraries/react.production.min.js",
+    "react-dom": "http://localhost:9096/libraries/react-dom.production.min.js"
   }
 }

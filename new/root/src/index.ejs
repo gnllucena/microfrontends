@@ -9,14 +9,15 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: localhost:*; script-src 'unsafe-inline' 'unsafe-eval' https: localhost:*; connect-src https: localhost:* ws://localhost:*; style-src 'unsafe-inline' https:; object-src 'none';">
   <meta name="importmap-type" content="systemjs-importmap" />
   
-  <script type="systemjs-importmap" src="http://localhost:9096/importmap.json"></script>
+  <script type="systemjs-importmap" src="http://localhost:9090/importmap.json"></script>
 
   <% if (isLocal) { %>
   <script type="systemjs-importmap">
     {
       "imports": {
         "@semnome/root-config": "//localhost:9000/semnome-root-config.js",
-        "@semnome/app-first": "http://localhost:9090/semnome-app-first.js"
+        "@semnome/app-first": "http://localhost:9090/semnome-app-first.js",
+        "@semnome/app-second": "http://localhost:9090/semnome-app-second.js"
       }
     }
   </script>
@@ -25,6 +26,17 @@
   <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.js"></script>
+
+  <template id="single-spa-layout">
+    <single-spa-router>
+      <main>
+        <route default>
+          <application name="@semnome/app-first"></application>
+          <application name="@semnome/app-second"></application>
+        </route>
+      </main>
+    </single-spa-router>    
+  </template>
 </head>
 <body>
   <noscript>
