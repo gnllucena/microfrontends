@@ -7,9 +7,6 @@
     "build:webpack": "webpack --mode=production"
   },
   "devDependencies": {
-    "concurrently": "^6.2.1",
-    "cross-env": "^7.0.3",
-    "identity-obj-proxy": "^3.0.0",
     "sass-loader": "^12.6.0",
     "sass-resources-loader": "^2.2.5",
     "style-loader": "^3.3.1",
@@ -20,6 +17,8 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "@types/systemjs": "^6.1.1"
+    "@types/systemjs": "^6.1.1",
+    "antd": "^4.20.2",
+    "sass": "^1.51.0"
   }
 }

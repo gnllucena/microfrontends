@@ -13,20 +13,25 @@ module.exports = (webpackConfigEnv, argv) => {
     module: {
       rules: [
         {
-          test: /\.scss$/,
+          test: /\.s[ac]ss$/i,
           use: [
             'style-loader',
-            'css-loader',
             {
-              loader: 'sass-loader',
+              loader: "css-loader",
               options: {
-                additionalData: `$urlimage: "${process.env.URL_IMAGES}/";`
-              }
+                sourceMap: true,
+              },
+            },
+            {
+              loader: "sass-loader",
+              options: {
+                sourceMap: true,
+              },
             },
             {
               loader: 'sass-resources-loader',
               options: {
-                resources: ['src/assets/styles/Theme.scss']
+                resources: ['src/styles/theme.scss']
               }
             }
           ]

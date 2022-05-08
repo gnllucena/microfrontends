@@ -23,3 +23,9 @@ npm --prefix storybook run build:webpack
 
 Write-Host "DEPLOYING STORYBOOK" -ForegroundColor Green -BackgroundColor White -nonewline;
 cp ./storybook/dist/semnome-storybook.js $DEPLOY_PATH
+
+Write-Host "BUILDING STYLESHEET" -ForegroundColor Green -BackgroundColor White -nonewline;
+npm --prefix stylesheet run build:webpack
+
+Write-Host "DEPLOYING STYLESHEET" -ForegroundColor Green -BackgroundColor White -nonewline;
+cp ./stylesheet/dist/semnome-stylesheet.js $DEPLOY_PATH

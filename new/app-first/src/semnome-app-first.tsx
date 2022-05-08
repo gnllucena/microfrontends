@@ -9,7 +9,7 @@ const lifecycles = singleSpaReact({
   rootComponent: Root,
   errorBoundary(err, info, props) {
     return <div>errors</div>;
-  },
+  }
 });
 
 export const { bootstrap, mount, unmount } = lifecycles;
