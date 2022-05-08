@@ -16,6 +16,7 @@
     {
       "imports": {
         "@semnome/root-config": "//localhost:9000/semnome-root-config.js",
+        "@semnome/navigation": "http://localhost:9090/semnome-navigation.js",
         "@semnome/app-first": "http://localhost:9090/semnome-app-first.js",
         "@semnome/app-second": "http://localhost:9090/semnome-app-second.js"
       }
@@ -29,9 +30,14 @@
 
   <template id="single-spa-layout">
     <single-spa-router>
+      <nav>
+        <application name="@semnome/navigation"></application>
+      </nav>
       <main>
         <route default>
           <application name="@semnome/app-first"></application>
+        </route>
+        <route path="second">
           <application name="@semnome/app-second"></application>
         </route>
       </main>
