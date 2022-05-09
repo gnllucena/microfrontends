@@ -1,10 +1,10 @@
 import React from "react";
 import { PieChartOutlined, DesktopOutlined } from '@ant-design/icons';
 import { Layout, Menu, MenuProps } from "antd";
+import { BrowserRouter, useNavigate } from "react-router-dom";
 
 import "antd/dist/antd.css";
 import "./index.css";
-import { BrowserRouter, Routes, useNavigate } from "react-router-dom";
 
 function Navigation() {
   let navigate = useNavigate();
@@ -28,7 +28,6 @@ function Navigation() {
     getItem('First App', '1', <PieChartOutlined />, () => navigate(`/`)),
     getItem('Second App', '2', <DesktopOutlined />, () => navigate(`/second`)),
   ];
-
 
   return (
     <Layout className="mf-navigation">
