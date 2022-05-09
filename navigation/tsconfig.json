@@ -1,0 +1,11 @@
+{
+  "extends": "ts-config-single-spa",
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "react-jsx",
+    "declarationDir": "dist"
+  },
+  "files": ["src/semnome-navigation.tsx"],
+  "include": ["src/**/*"],
+  "exclude": ["src/**/*.test*"]
+}
