@@ -1,6 +1,7 @@
 const { merge } = require("webpack-merge");
 const singleSpaDefaults = require("webpack-config-single-spa-ts");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 
 module.exports = (webpackConfigEnv, argv) => {
   const orgName = "semnome";
@@ -13,7 +14,6 @@ module.exports = (webpackConfigEnv, argv) => {
   });
 
   return merge(defaultConfig, {
-    // modify the webpack config however you'd like to by adding to this object
     plugins: [
       new HtmlWebpackPlugin({
         inject: false,
@@ -22,6 +22,14 @@ module.exports = (webpackConfigEnv, argv) => {
           isLocal: webpackConfigEnv && webpackConfigEnv.isLocal,
           orgName,
         },
+      }),
+      new ModuleFederationPlugin({
+        name: 'home',
+        library: { type: 'var', name: 'home' },
+        filename: 'remoteEntry.js',
+        remotes: {},
+        exposes: {},
+        shared: [],
       }),
     ],
   });

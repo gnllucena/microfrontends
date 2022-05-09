@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import singleSpaReact from "single-spa-react";
-import Root from "./root.component";
+import index from ".";
 
 const lifecycles = singleSpaReact({
   React,
   ReactDOM,
-  rootComponent: Root,
+  rootComponent: index,
   errorBoundary(err, info, props) {
     return <div>errors</div>;
   }
