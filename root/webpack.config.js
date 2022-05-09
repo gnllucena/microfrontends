@@ -24,12 +24,9 @@ module.exports = (webpackConfigEnv, argv) => {
         },
       }),
       new ModuleFederationPlugin({
-        name: 'home',
-        library: { type: 'var', name: 'home' },
+        name: 'root-config',
+        library: { type: 'system', name: 'root-config' },
         filename: 'remoteEntry.js',
-        remotes: {},
-        exposes: {},
-        shared: [],
       }),
     ],
   });

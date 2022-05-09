@@ -1,0 +1,15 @@
+body > div {
+  height: 100%;
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+.mf-app-first {
+  height: 100%; 
+}
+
+.mf-app-first .content {
+  height: 90%;
+}
