@@ -22,7 +22,9 @@ module.exports = (webpackConfigEnv, argv) => {
         shared: {
           'react': { requiredVersion: '^17.0.2', eager: true }, 
           'react-dom': { requiredVersion: '^17.0.2', eager: true }, 
-          'single-spa-react': { requiredVersion: '^4.3.1', eager: true }, 
+          'single-spa-react': { requiredVersion: '^4.3.1', eager: true },
+          'antd': { requiredVersion: '^4.20.3', eager: true },
+          '@ant-design/icons': { requiredVersion: '^4.7.0', eager: true },
         },
       }),
     ]

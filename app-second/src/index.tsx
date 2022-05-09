@@ -1,6 +1,6 @@
 import React from "react";
 import { Breadcrumb, Layout } from "antd";
-import { Content, Footer, Header } from "antd/lib/layout/layout";
+import { Content, Header } from "antd/lib/layout/layout";
 
 import "antd/dist/antd.css";
 import "./index.css";
